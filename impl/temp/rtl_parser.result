@@ -1,0 +1,302 @@
+[
+    {
+        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+        "InstLine": 1,
+        "InstName": "inverted_pendulum_autoswing_top",
+        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+        "ModuleLine": 1,
+        "ModuleName": "inverted_pendulum_autoswing_top",
+        "SubInsts": [
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 57,
+                "InstName": "u_adc",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/ad9220_capture.v",
+                "ModuleLine": 4,
+                "ModuleName": "ad9220_capture"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 68,
+                "InstName": "u_feedback",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/pid_feedback_guard.v",
+                "ModuleLine": 3,
+                "ModuleName": "pid_feedback_guard"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 78,
+                "InstName": "u_encoder",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/quadrature_position.v",
+                "ModuleLine": 4,
+                "ModuleName": "quadrature_position"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 81,
+                "InstName": "u_speed_measure",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/encoder_speed_estimator.v",
+                "ModuleLine": 4,
+                "ModuleName": "encoder_speed_estimator"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 84,
+                "InstName": "u_f2",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/button_repeat.v",
+                "ModuleLine": 3,
+                "ModuleName": "button_repeat"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 86,
+                "InstName": "u_f1",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/button_repeat.v",
+                "ModuleLine": 3,
+                "ModuleName": "button_repeat"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 88,
+                "InstName": "u_e3",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/button_repeat.v",
+                "ModuleLine": 3,
+                "ModuleName": "button_repeat"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 90,
+                "InstName": "u_s1",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/button_repeat.v",
+                "ModuleLine": 3,
+                "ModuleName": "button_repeat"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 92,
+                "InstName": "u_s2",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/button_repeat.v",
+                "ModuleLine": 3,
+                "ModuleName": "button_repeat"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 173,
+                "InstName": "u_swing",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/adc_peak_swingup.v",
+                "ModuleLine": 3,
+                "ModuleName": "adc_peak_swingup"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 183,
+                "InstName": "u_swing_motor",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/swing_pulse_pwm.v",
+                "ModuleLine": 3,
+                "ModuleName": "swing_pulse_pwm"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 191,
+                "InstName": "u_ui",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/dual_mode_ui.v",
+                "ModuleLine": 3,
+                "ModuleName": "dual_mode_ui"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 201,
+                "InstName": "u_position_pid",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/position_pid_outer.v",
+                "ModuleLine": 4,
+                "ModuleName": "position_pid_outer"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 206,
+                "InstName": "u_speed_pid",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/speed_pid_outer.v",
+                "ModuleLine": 4,
+                "ModuleName": "speed_pid_outer"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 215,
+                "InstName": "u_outer_start",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/outer_pid_soft_start.v",
+                "ModuleLine": 1,
+                "ModuleName": "outer_pid_soft_start"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 223,
+                "InstName": "u_angle_pid",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/pid_angle_ctrl.v",
+                "ModuleLine": 5,
+                "ModuleName": "pid_angle_ctrl"
+            },
+            {
+                "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/inverted_pendulum_autoswing_top.v",
+                "InstLine": 235,
+                "InstName": "u_tft",
+                "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                "ModuleLine": 2,
+                "ModuleName": "tft_cascade_display",
+                "SubInsts": [
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 92,
+                        "InstName": "u_ikp",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 94,
+                        "InstName": "u_iki",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 96,
+                        "InstName": "u_ikd",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 98,
+                        "InstName": "u_okp",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 100,
+                        "InstName": "u_oki",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 102,
+                        "InstName": "u_okd",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 104,
+                        "InstName": "u_skp",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 106,
+                        "InstName": "u_ski",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 108,
+                        "InstName": "u_skd",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 110,
+                        "InstName": "u_adc",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 112,
+                        "InstName": "u_spread",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 114,
+                        "InstName": "u_target",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin13_to_bcd4.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "bin13_to_bcd4"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 117,
+                        "InstName": "u_set",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 119,
+                        "InstName": "u_new",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 121,
+                        "InstName": "u_pos",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 123,
+                        "InstName": "u_speed_set",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 125,
+                        "InstName": "u_speed_new",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 127,
+                        "InstName": "u_speed_actual",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/bin17_to_bcd5.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "bin17_to_bcd5"
+                    },
+                    {
+                        "InstFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/tft_cascade_display.v",
+                        "InstLine": 141,
+                        "InstName": "u_spi",
+                        "ModuleFile": "C:/Users/hszxd/Desktop/deepseek/FPGA/PID-project-github/src/spi_byte_tx.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "spi_byte_tx"
+                    }
+                ]
+            }
+        ]
+    }
+]

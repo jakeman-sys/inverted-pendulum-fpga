@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template><Version>5</Version>
+    <Device name="GW5A-25" pn="GW5A-LV25MG121NES">gw5a25-000</Device>
+    <FileList>
+        <File path="src/ad9220_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/pid_feedback_guard.v" type="file.verilog" enable="1"/>
+        <File path="src/bin13_to_bcd4.v" type="file.verilog" enable="1"/>
+        <File path="src/bin17_to_bcd5.v" type="file.verilog" enable="1"/>
+        <File path="src/spi_byte_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/button_repeat.v" type="file.verilog" enable="1"/>
+        <File path="src/dual_mode_ui.v" type="file.verilog" enable="1"/>
+        <File path="src/quadrature_position.v" type="file.verilog" enable="1"/>
+        <File path="src/encoder_speed_estimator.v" type="file.verilog" enable="1"/>
+        <File path="src/position_pid_outer.v" type="file.verilog" enable="1"/>
+        <File path="src/speed_pid_outer.v" type="file.verilog" enable="1"/>
+        <File path="src/outer_pid_soft_start.v" type="file.verilog" enable="1"/>
+        <File path="src/pid_angle_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/tft_cascade_display.v" type="file.verilog" enable="1"/>
+        <File path="src/swing_pulse_pwm.v" type="file.verilog" enable="1"/>
+        <File path="src/adc_peak_swingup.v" type="file.verilog" enable="1"/>
+        <File path="src/inverted_pendulum_autoswing_top.v" type="file.verilog" enable="1"/>
+        <File path="src/inverted_pendulum_angle_pid.cst" type="file.cst" enable="1"/>
+        <File path="src/inverted_pendulum_angle_pid.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

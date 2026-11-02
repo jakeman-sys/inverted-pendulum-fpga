@@ -1,0 +1,77 @@
+// 按用户 gw引脚分配.md：角度环只使用 ADC、TFT、F2、TB6612 引脚。
+// Tang Primer 25K GW5A-LV25MG121NES; E2 is the onboard 50 MHz oscillator.
+IO_LOC "clk" E2;
+IO_PORT "clk" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+
+// AD9220 P2: D12 is OTR, not a 13th conversion bit.
+IO_LOC "adc_clk" J10;
+IO_LOC "adc_data[0]" F6;
+IO_LOC "adc_data[1]" K8;
+IO_LOC "adc_data[2]" K9;
+IO_LOC "adc_data[3]" K10;
+IO_LOC "adc_data[4]" L8;
+IO_LOC "adc_data[5]" J7;
+IO_LOC "adc_data[6]" K7;
+IO_LOC "adc_data[7]" L7;
+IO_LOC "adc_data[8]" L10;
+IO_LOC "adc_data[9]" L9;
+IO_LOC "adc_data[10]" J8;
+IO_LOC "adc_data[11]" F7;
+IO_LOC "adc_otr" J11;
+IO_PORT "adc_clk" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "adc_data[0]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[1]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[2]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[3]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[4]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[5]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[6]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[7]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[8]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[9]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[10]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_data[11]" PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "adc_otr" PULL_MODE=NONE BANK_VCCIO=3.3;
+
+// GMT020-02-8P ST7789VM; SDA/SCL are SPI MOSI/SCLK.
+IO_LOC "tft_bl" J2;
+IO_LOC "tft_cs_n" J1;
+IO_LOC "tft_dc" H4;
+IO_LOC "tft_rst_n" G4;
+IO_LOC "tft_mosi" H2;
+IO_LOC "tft_sclk" H1;
+IO_PORT "tft_bl" PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "tft_cs_n" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tft_dc" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tft_rst_n" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tft_mosi" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tft_sclk" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// 按键 1：按下接 3.3 V，松开由内部下拉（推荐外部再加 10 kΩ）。
+IO_LOC "button" F2;
+IO_PORT "button" PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+// 扩展板交互按键；板载 S1 由 3.3 V 经 100 Ω 接 H11，按下为高。
+IO_LOC "button_dec" F1;
+IO_LOC "button_inc" E3;
+IO_LOC "button_page" H11;
+IO_LOC "button_speed_page" H10;
+IO_PORT "button_dec" PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "button_inc" PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "button_page" PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "button_speed_page" PULL_MODE=DOWN DRIVE=OFF BANK_VCCIO=3.3;
+
+// 3.3 V 供电的霍尔编码器 A/B 相，双触发器同步后四倍频。
+IO_LOC "encoder_a" K1;
+IO_LOC "encoder_b" K2;
+IO_PORT "encoder_a" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_PORT "encoder_b" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+
+// TB6612 单电机 A 通道。
+IO_LOC "tb_pwma" K4;
+IO_LOC "tb_ain1" L1;
+IO_LOC "tb_ain2" J4;
+IO_LOC "tb_stby" L2;
+IO_PORT "tb_pwma" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tb_ain1" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tb_ain2" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "tb_stby" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;

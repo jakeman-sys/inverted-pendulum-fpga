@@ -1,0 +1,6 @@
+open_project inverted_pendulum_dual_mode_autoswing.gprj
+set_option -top_module inverted_pendulum_autoswing_top
+set_option -use_cpu_as_gpio 1
+set_option -output_base_name inverted_pendulum_dual_mode_autoswing
+run all
+run close
