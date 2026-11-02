@@ -1,0 +1,27 @@
+# Gowin 构建生成物
+impl/
+*.fs
+*.bin
+*.binx
+*.pr
+*.p
+*.db
+*.vg
+*.rpt.html
+*.tr.html
+*.timing_paths
+*_syn.rpt.html
+
+# 仿真日志与 ModelSim 库
+sim/work/
+sim/gatework/
+modelsim.ini
+*.wlf
+*.log
+
+# 本机配置
+*.gprj.user
+.vscode/
+.idea/
+__pycache__/
+*.pyc
