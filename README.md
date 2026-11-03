@@ -76,23 +76,6 @@ PID-project-github/
 
 最近一次 Gowin 布局布线结果：50 MHz 约束下 Actual Fmax 50.073 MHz，setup/hold 违例 0；Logic 6844/23040（30%），Register 3399/23280（15%），DSP 12，BSRAM 0。
 
-## 上传到 GitHub
-
-仓库设为 **Public**。网页上传：New repository → “uploading an existing file” → 把本目录内容拖进去 → Commit。
-
-或使用 Git：
-
-```bash
-git init
-git add .
-git commit -m "FPGA inverted pendulum"
-git branch -M main
-git remote add origin https://github.com/<用户名>/<仓库名>.git
-git push -u origin main
-```
-
-## 说明
-
 - `impl/`、`sim/work/`、`sim/gatework/` 是综合/仿真生成物，未提交；运行脚本后会自动生成。
 - `.gprj.user`、`modelsim.ini` 是本机配置，未提交。
 - `build.ps1`、`sim/*.ps1` 内含有本机绝对路径，换电脑后请修改或通过参数传入。
