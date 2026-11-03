@@ -80,5 +80,5 @@ PID-project-github/
 - `.gprj.user`、`modelsim.ini` 是本机配置，未提交。
 - `build.ps1`、`sim/*.ps1` 内含有本机绝对路径，换电脑后请修改或通过参数传入。
 - 历史验证快照与旧日志未提交，仓库只保留当前源码、testbench 与构建/仿真脚本，避免与当前参数混淆。
-- 部分 testbench（如 `tb_autoswing_top.v`、`tb_autoswing_gate.v`）中的角度常量按 `CENTER_CODE=1403` 编写，当前顶层为 1404；运行这些用例前请同步常量，或临时把顶层改回 1403。
+- 部分 testbench（如 `tb_autoswing_top.v`、`tb_autoswing_gate.v`）中的中心角度以实际测量摆杆稳定时得到adc值的为主，当前顶层为 1404；运行这些用例前请同步中心角度常量。
 - 本工程仅用于本次竞赛评审与学习交流，复用时请注明来源。
